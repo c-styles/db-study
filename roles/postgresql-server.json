@@ -1,0 +1,20 @@
+{
+  "name": "postgresql-server",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "postgresql": {
+      "enable_pgdg_apt" : true,
+      "version": "9.4",
+      "password": {
+        "postgres": "postgres"
+      }
+    }
+  },
+  "run_list": [
+    "recipe[postgresql::server]"
+  ],
+  "description": "",
+  "override_attributes": {
+  }
+}

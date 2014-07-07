@@ -1,0 +1,13 @@
+{
+  "name": "webmin",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "run_list": [
+    "recipe[webmin]"
+  ],
+  "description": "",
+  "override_attributes": {
+  }
+}

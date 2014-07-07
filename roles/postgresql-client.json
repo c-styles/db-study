@@ -1,0 +1,17 @@
+{
+  "name": "postgresql-client",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "postgresql": {
+      "enable_pgdg_apt" : true,
+      "version": "9.4"
+    }
+  },
+  "run_list": [
+    "recipe[postgresql::client]"
+  ],
+  "description": "",
+  "override_attributes": {
+  }
+}

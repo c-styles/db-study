@@ -1,0 +1,9 @@
+{
+  "name" : "app-server",
+  "environment":"production",
+  "run_list":[
+    "role[postgresql-client]"
+  ],
+  "fqdn":"app.example.com",
+  "ipaddress":"192.168.50.10"
+}

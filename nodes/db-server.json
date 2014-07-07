@@ -1,0 +1,10 @@
+{
+  "name" : "db-server",
+  "environment":"development",
+  "run_list":[
+    "role[postgresql-server]",
+    "role[webmin]"
+  ],
+  "fqdn":"db.example.com",
+  "ipaddress":"192.168.50.11"
+}
